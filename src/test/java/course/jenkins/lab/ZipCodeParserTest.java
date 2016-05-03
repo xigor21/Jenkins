@@ -72,7 +72,7 @@ public class ZipCodeParserTest {
 		assertEquals(zipWithSpecialCharacterInBetween.substring(6, 10), zipParts[1]);
 	}
 	
-	@Ignore
+	@Test
 	public void testZipCodeParserShouldSetNullValuesWhenPassesNullValue() throws Exception {
 		String[] zipParts = ZipCodeParser.parseZipCode(null);
 		assertNull(zipParts[0]);
